@@ -3,7 +3,7 @@ export default function Menu() {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             Navbar
           </a>
           <button
@@ -25,14 +25,14 @@ export default function Menu() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/">
                   Link
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -47,7 +47,7 @@ export default function Menu() {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/">
                       Another action
                     </a>
                   </li>
@@ -55,7 +55,7 @@ export default function Menu() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/">
                       Something else here
                     </a>
                   </li>

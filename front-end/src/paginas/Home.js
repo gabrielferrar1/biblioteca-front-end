@@ -43,7 +43,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -71,7 +71,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -99,7 +99,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -127,7 +127,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -155,7 +155,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -183,7 +183,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -211,7 +211,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -239,7 +239,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
@@ -267,7 +267,7 @@ export default function Home() {
                     <p className="card-text">
                       <small className="text-muted">??? Year</small>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a href="/" className="btn btn-primary">
                       Go somewhere
                     </a>
                   </div>
