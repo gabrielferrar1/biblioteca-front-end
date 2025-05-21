@@ -14,9 +14,9 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/categorias" element={<ListaCategoria />} />
-            <Route path="/categoria" element={<FormCategoria />} />
-            <Route path="/categoria/:id" element={<FormCategoria />} />
+            <Route path="/listacategoria" element={<ListaCategoria />} />
+            <Route path="/cadastrocategoria" element={<FormCategoria />} />
+            <Route path="/cadastrocategoria/:id" element={<FormCategoria />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
