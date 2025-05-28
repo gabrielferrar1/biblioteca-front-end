@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import axios from "axios";
+import TituloCadastro from "../componentes/TituloCadastro";
 
 export default function FormCategoria() {
   const navegacao = useNavigate();
@@ -16,15 +17,52 @@ export default function FormCategoria() {
     voltar();
   };
 
+  const selecionar = async () => {
+    let { data } = await axios.get(`http://localhost:4000/categoria/${id}`);
+    setNomeCategoria(data.nome_categoria);
+  };
+
+  const alterar = async () => {
+    let body = {
+      nome_categoria: nomecategoria,
+    };
+    await axios.put(`http://localhost:4000/categoria/${id}`, body);
+    voltar();
+  };
+
+  const inserir = async () => {
+    let body = {
+      nome_categoria: nomecategoria,
+    };
+    await axios.post(`http://localhost:4000/categoria`, body);
+    voltar();
+  };
+
+  const salvar = async () => {
+    if (id) {
+      alterar();
+    } else {
+      inserir();
+    }
+  };
+
+  useEffect(() => {
+    if (id) {
+      selecionar();
+    }
+  }, []);
+
   return (
     <>
-      <h1>Cadastros de categoria</h1>
+      <TituloCadastro id={id} titulo="Categoria" />
 
       <form>
-        <div className="mb-3">
-          <label className="form-label">Código</label>
-          <input type="text" className="form-control" value={id} />
-        </div>
+        {id && (
+          <div className="mb-3">
+            <label className="form-label">Código</label>
+            <input type="text" className="form-control" value={id} />
+          </div>
+        )}
         <div className="mb-3">
           <label className="form-label">Nome da categoria</label>
           <input
@@ -34,7 +72,11 @@ export default function FormCategoria() {
             onChange={(evento) => setNomeCategoria(evento.target.value)}
           />
         </div>
-        <button type="button" className="btn btn-primary">
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => salvar()}
+        >
           Salvar
         </button>
         <button
@@ -44,13 +86,15 @@ export default function FormCategoria() {
         >
           Cancelar
         </button>
-        <button
-          type="button"
-          className="btn btn-danger"
-          onClick={() => excluir()}
-        >
-          Excluir
-        </button>
+        {id && (
+          <button
+            type="button"
+            className="btn btn-danger"
+            onClick={() => excluir()}
+          >
+            Excluir
+          </button>
+        )}
       </form>
     </>
   );
