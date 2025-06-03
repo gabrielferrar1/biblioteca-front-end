@@ -38,12 +38,22 @@ export default function Menu() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                    Listagens
+                  Listagens
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <a className="dropdown-item" href="/listacategoria">
                       Categorias
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/listaautor">
+                      Autores
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="/listaeditora">
+                      Editoras
                     </a>
                   </li>
                   <li>
@@ -53,11 +63,6 @@ export default function Menu() {
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
                   </li>
                 </ul>
               </li>
